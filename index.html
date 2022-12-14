@@ -37,7 +37,7 @@
 
       <div class="">
         <!------------Empieza el formulario------------>
-        <form class="needs-validation" onsubmit="return false"  novalidate>
+        <form class="needs-validation" onsubmit="return false" novalidate>
           <!-- onsubmit="return false; Sirve Para no enviar el formulario pero hacer la validación -->
           <!------------Datos Personales------------>
           <h5>Datos Personales</h5>
@@ -310,8 +310,8 @@
             <!------------Secundaria------------>
             <div class="col-md-6">
               <label for="nombEsc_Secundaria" class="form-label">Nombre de Escuela Secundaria:</label>
-              <input name="nombEsc_Secundaria" class="form-control text-uppercase" id="nombEsc_Secundaria" placeholder=""
-                pattern="[A-Za-z0-9 ñÑáéíóöúüÁÉÍÓÖÚÜ]{8,30}" required>
+              <input name="nombEsc_Secundaria" class="form-control text-uppercase" id="nombEsc_Secundaria"
+                placeholder="" pattern="[A-Za-z0-9 ñÑáéíóöúüÁÉÍÓÖÚÜ]{8,30}" required>
               <div class="invalid-feedback">
                 Por favor escribe un nombre válido.
               </div>
@@ -343,8 +343,8 @@
             <!------------Preparatoria------------>
             <div class="col-md-6">
               <label for="nombEsc_Preparatoria" class="form-label">Nombre de Escuela Preparatoria:</label>
-              <input name="nombEsc_Preparatoria" class="form-control text-uppercase" id="nombEsc_Preparatoria" placeholder=""
-                pattern="[A-Za-z0-9 ñÑáéíóöúüÁÉÍÓÖÚÜ]{8,30}">
+              <input name="nombEsc_Preparatoria" class="form-control text-uppercase" id="nombEsc_Preparatoria"
+                placeholder="" pattern="[A-Za-z0-9 ñÑáéíóöúüÁÉÍÓÖÚÜ]{8,30}">
               <div class="invalid-feedback">
                 Por favor escribe un nombre válido.
               </div>
@@ -376,8 +376,8 @@
             <!------------Estudios Superiores------------>
             <div class="col-md-6">
               <label for="nombEsc_Superiores" class="form-label">Nombre de Universidad:</label>
-              <input name="nombEsc_Superiores" class="form-control text-uppercase" id="nombEsc_Superiores" placeholder=""
-                pattern="[A-Za-z0-9 ñÑáéíóöúüÁÉÍÓÖÚÜ]{8,50}">
+              <input name="nombEsc_Superiores" class="form-control text-uppercase" id="nombEsc_Superiores"
+                placeholder="" pattern="[A-Za-z0-9 ñÑáéíóöúüÁÉÍÓÖÚÜ]{8,50}">
               <div class="invalid-feedback">
                 Por favor escribe un nombre válido.
               </div>
@@ -592,14 +592,21 @@
                 </div>
               </div>
             </div>-->
-
+            
+            <div class="d-inline-flex justify-content-center">
+              <p class="p-2 border bg-black rounded-3 primary text-white fs-5 text-center fw-bold text-uppercase mb-1">favor de
+                descargar el pdf al generarlo, porque no se guarda.</p>
+            </div>
+          
 
             <div class="col-6">
               <!--<input type="submit" class="w-100 btn btn-primary btn-lg" name="insert" value="Enviar">-->
-              <button type="submit" id="btnvalidar" class="w-100 btn btn-primary btn-lg" onclick="sub()">Validar Información</button>
+              <button type="submit" id="btnvalidar" class="w-100 btn btn-primary btn-lg" onclick="sub()">Validar
+                Información</button>
             </div>
             <div class="col-6">
-              <input type="button" id="btncedula0" class="w-100 btn btn-primary btn-lg" onclick="cedula0()" value="Generar Cédula 0" disabled>
+              <input type="button" id="btncedula0" class="w-100 btn btn-primary btn-lg" onclick="cedula0()"
+                value="Generar Cédula 0" disabled>
             </div>
             <h4 class="pb-2"></h4>
 
