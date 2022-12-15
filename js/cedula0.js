@@ -6,6 +6,13 @@ cedula0 = () => {
         putOnlyUsedFonts: false,
         floatPrecision: 16 // or "smart", default is 16
     });
+    // Optional - set properties on the document
+    doc.setProperties({
+        title: 'Cedula_0 '+nombres_Personal +" "+ aPaterno_Personal + " " + aMaterno_Personal,
+        subject: 'Cedula_0',
+        author: 'VIVEVOLANDO',
+        creator: 'Christopher S.'
+    });
     //doc.text("Hello world!", 10, 10);
     doc.addImage(sctImg, 13.386, 13.383, 56.473, 20.997);
     doc.addImage(dgacImg, 178.135, 13.845, 22.0, 22.0);
