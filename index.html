@@ -304,7 +304,7 @@
 
             <div class="col-md-2">
               <label class="form-check-label" for="certEsc_Primaria">Certificado</label>
-              <input class="form-check-input" type="checkbox" value="X" id="certEsc_Primaria">
+              <input class="form-check-input" type="checkbox" id="certEsc_Primaria">
             </div>
 
             <!------------Secundaria------------>
@@ -337,7 +337,7 @@
 
             <div class="col-md-2">
               <label class="form-check-label" for="certEsc_Secundaria">Certificado</label>
-              <input class="form-check-input" type="checkbox" value="X" id="certEsc_Secundaria">
+              <input class="form-check-input" type="checkbox" id="certEsc_Secundaria">
             </div>
 
             <!------------Preparatoria------------>
@@ -370,7 +370,7 @@
 
             <div class="col-md-2">
               <label class="form-check-label" for="certEsc_Preparatoria">Certificado</label>
-              <input class="form-check-input" type="checkbox" value="X" id="certEsc_Preparatoria">
+              <input class="form-check-input" type="checkbox" id="certEsc_Preparatoria">
             </div>
 
             <!------------Estudios Superiores------------>
@@ -402,7 +402,7 @@
 
             <div class="col-md-2">
               <label class="form-check-label" for="certEsc_Superiores">Certificado</label>
-              <input class="form-check-input" type="checkbox" value="X" id="certEsc_Superiores">
+              <input class="form-check-input" type="checkbox" id="certEsc_Superiores">
             </div>
 
             <!------------Datos de la persona a notificar en caso de accidente------------>
@@ -654,22 +654,24 @@
       lugarNacimiento_Personal = document.getElementById("lugarNacimiento_Personal").value.toUpperCase();
       noActa_Personal = document.getElementById("noActa_Personal").value.toUpperCase();
       fechaNacimiento_Personal = document.getElementById("fechaNacimiento_Personal").value.toUpperCase();
+      
       nombEsc_Primaria = document.getElementById("nombEsc_Primaria").value.toUpperCase();
       deEsc_Primaria = document.getElementById("deEsc_Primaria").value.toUpperCase();
       aEsc_Primaria = document.getElementById("aEsc_Primaria").value.toUpperCase();
-      certEsc_Primaria = document.getElementById("certEsc_Primaria").value.toUpperCase();
+      if (document.getElementById('certEsc_Primaria').checked){certEsc_Primaria = "X"}else{certEsc_Primaria=""};
       nombEsc_Secundaria = document.getElementById("nombEsc_Secundaria").value.toUpperCase();
       deEsc_Secundaria = document.getElementById("deEsc_Secundaria").value.toUpperCase();
       aEsc_Secundaria = document.getElementById("aEsc_Secundaria").value.toUpperCase();
-      certEsc_Secundaria = document.getElementById("certEsc_Secundaria").value.toUpperCase();
+      if (document.getElementById('certEsc_Secundaria').checked){certEsc_Secundaria = "X"}else{certEsc_Secundaria=""};
       nombEsc_Preparatoria = document.getElementById("nombEsc_Preparatoria").value.toUpperCase();
       deEsc_Preparatoria = document.getElementById("deEsc_Preparatoria").value.toUpperCase();
       aEsc_Preparatoria = document.getElementById("aEsc_Preparatoria").value.toUpperCase();
-      certEsc_Preparatoria = document.getElementById("certEsc_Preparatoria").value.toUpperCase();
+      if (document.getElementById('certEsc_Preparatoria').checked){certEsc_Preparatoria = "X"}else{certEsc_Preparatoria=""};
       nombEsc_Superiores = document.getElementById("nombEsc_Superiores").value.toUpperCase();
       deEsc_Superiores = document.getElementById("deEsc_Superiores").value.toUpperCase();
       aEsc_Superiores = document.getElementById("aEsc_Superiores").value.toUpperCase();
-      certEsc_Superiores = document.getElementById("certEsc_Superiores").value.toUpperCase();
+      if (document.getElementById('certEsc_Superiores').checked){certEsc_Superiores = "X"}else{certEsc_Superiores=""};
+      
       CURP_Acc = document.getElementById("CURP_Acc").value.toUpperCase();
       RFC_Acc = document.getElementById("RFC_Acc").value.toUpperCase();
       aPaterno_Acc = document.getElementById("aPaterno_Acc").value.toUpperCase();
