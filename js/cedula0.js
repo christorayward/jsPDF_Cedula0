@@ -8,7 +8,7 @@ cedula0 = () => {
     });
     // Optional - set properties on the document
     doc.setProperties({
-        title: 'Cedula_0 '+nombres_Personal +" "+ aPaterno_Personal + " " + aMaterno_Personal,
+        title: 'CEDULA_0 '+nombres_Personal +" "+ aPaterno_Personal + " " + aMaterno_Personal,
         subject: 'Cedula_0',
         author: 'VIVEVOLANDO',
         creator: 'Christopher S.'
